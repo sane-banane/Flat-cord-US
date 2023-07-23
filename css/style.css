@@ -349,6 +349,19 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
+.read{
+    padding:15px 0;
+}
+.read a{
+    border-bottom:1px solid #F5B301;
+    color:white;
+    transition:0.5s all;
+}
+.read a:hover {
+    border-bottom:none;
+    opacity:0.6;
+    transition:0.5s all;
+}
 
 /* feature */
 .contents {
@@ -409,6 +422,17 @@ nav a:hover {
     transition: all 0.5s;
 }
 
+.note-link{
+    color:#333;
+    border-bottom: 2px solid #333;
+    transition:0.5s all;
+}
+
+.note-link:hover{
+    opacity:0.5;
+    border-bottom:none;
+    transition:0.5s all;
+}
 .durability {
     float: right;
     margin-top: 30px;
@@ -424,7 +448,8 @@ nav a:hover {
 
 .point-text p {
     font-size: 12px;
-    padding-top: 20px
+    padding: 20px 0;
+
 }
 
 
@@ -568,7 +593,16 @@ nav a:hover {
     width: 50%;
     padding-right: 15px;
 }
-
+.contacts-text p{
+    padding-top:20px;
+}
+.contacts-text a{
+    color:white;
+    border-bottom:1px solid white;
+}
+.contacts-text a:hover {
+opacity:0.7;
+}
 form {
     width: 50%;
     padding-left: 15px;
@@ -629,6 +663,34 @@ form p {
 form p:first-child {
     padding-top: 0;
 }
+
+
+/* disclosure */
+#disclosure h3{
+    padding:30px 0;
+}
+#disclosure p{
+    padding-top:15px;
+}
+#description{
+    padding-bottom:30px;
+}
+#oversea{
+    padding-bottom:50px;
+}
+
+#experiment{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+    margin-bottom:80px;
+}
+
+.home{
+    text-align: center;
+    padding-bottom:50px;
+}
+
 
 @media (max-width:830px) {
     #main-visual h2 {
@@ -721,6 +783,9 @@ form p:first-child {
 
     #contacts .container {
         display: block;
+    }
+    #experiment{
+        grid-template-columns: 1fr 1fr;
     }
 
 }
